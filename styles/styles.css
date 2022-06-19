@@ -48,6 +48,12 @@ body {
   font-weight: 300;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: var(--Gray);
+}
+
+.main__title b {
+  font-weight: 700;
+  color: #000;
 }
 
 .main__text {
@@ -94,7 +100,7 @@ body {
 }
 
 .footer__icon-badge {
-  width: 2.5rem;
+  width: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,4 +125,40 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+  .main__wrapper {
+    width: 60vw;
+  }
+
+  .main__title {
+    font-size: 2rem;
+  }
+
+  .main__text {
+    font-size: 1rem;
+  }
+
+  .main__form {
+    flex-direction: row;
+  }
+
+  .form__input {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1440p) {
+  .main__wrapper {
+    width: 40vw;
+  }
+
+  .main__title {
+    font-size: 2.5rem;
+  }
+
+  .form__btn {
+    padding: 0.8rem 2rem;
+  }
 }
