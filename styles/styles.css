@@ -67,6 +67,7 @@ body {
   width: 80%;
   gap: 0.5rem;
   margin-bottom: 4rem;
+  position: relative;
 }
 
 .form__input,
@@ -74,6 +75,27 @@ body {
   padding: 0.8rem 1.6rem;
   border-radius: 2rem;
   border: 1px solid var(--Pale-Blue);
+  transition: border-color 0.5s ease;
+}
+
+.form__error-msg {
+  height: 0;
+  font-style: italic;
+  color: var(--Light-Red);
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0;
+  transition: height, opacity 0.5s ease;
+}
+
+.warning {
+  border-color: var(--Light-Red);
+}
+
+.active {
+  height: initial;
+  opacity: 1;
+  display: block;
 }
 
 .form__input::placeholder {
@@ -84,6 +106,12 @@ body {
   background-color: var(--Blue);
   color: #fff;
   box-shadow: 0px 5px 20px 0px var(--Pale-Blue);
+  transition: opacity 0.5s ease;
+}
+
+.form__btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .img__container > img {
@@ -111,6 +139,16 @@ body {
   border: 1px solid var(--Pale-Blue);
   border-radius: 9999px;
   padding: 0.4rem;
+  transition: fill, background-color 0.5s ease;
+}
+
+.footer__icon-badge:hover {
+  cursor: pointer;
+}
+
+.footer__icon-badge > svg:hover {
+  fill: #fff;
+  background-color: var(--Blue);
 }
 
 .footer__copy {
@@ -142,6 +180,16 @@ body {
 
   .main__form {
     flex-direction: row;
+  }
+
+  .form__error-msg {
+    position: absolute;
+    bottom: -15%;
+    left: 5%;
+  }
+
+  .active {
+    height: 0;
   }
 
   .form__input {
