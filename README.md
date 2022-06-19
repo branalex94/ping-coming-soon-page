@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/branalex94/ping-coming-soon-page
-- Live Site URL:
+- Live Site URL: https://branalex94.github.io/ping-coming-soon-page
 
 ## My process
 
