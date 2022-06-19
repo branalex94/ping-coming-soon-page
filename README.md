@@ -56,7 +56,7 @@ I'd like to keep focusing on form handling as well as better implementation of i
 
 ### Useful resources
 
-- [Email validation RegEx](https://www.w3resource.com/javascript/form/email-validation.php#:~:text=To%20get%20a%20valid%20email,%5D%2B)\*%24%2F.) - This helped me have a fast implementation of an email validation regular expression.
+- [Email validation RegEx](https://www.w3resource.com/javascript/form/email-validation.php#:~:text=To%20get%20a%20valid%20email,%5D%2B)\\\*%24%2F.) - This helped me have a fast implementation of an email validation regular expression.
 
 ## Author
 
